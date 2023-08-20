@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = props => {
-  const [isActive, setIsActive] = React.useState(false);
+  const [isActive, setIsActive] = useState(false);
   const toggleNavbar = () => {
     setIsActive(!isActive);
   };

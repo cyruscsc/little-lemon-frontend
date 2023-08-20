@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BookingForm.css'
 
 const BookingForm = props => {
   const defaultInputState = {value: '', isTouch: false};
-  const [date, setDate] = React.useState(defaultInputState);
-  const [time, setTime] = React.useState(defaultInputState);
-  const [numDiners, setNumDiners] = React.useState(defaultInputState);
-  const [occasion, setOccasion] = React.useState("");
-  const [seatOption, setSeatOption] = React.useState("");
-  const [firstName, setFirstName] = React.useState(defaultInputState);
-  const [lastName, setLastName] = React.useState(defaultInputState);
-  const [email, setEmail] = React.useState(defaultInputState);
-  const [specialRequest, setSpecialRequest] = React.useState("");
-  const [isSuccessful, setIsSuccessful] = React.useState(false);
-  const [isFailed, setIsFailed] = React.useState(false);
+  const [date, setDate] = useState(defaultInputState);
+  const [time, setTime] = useState(defaultInputState);
+  const [numDiners, setNumDiners] = useState(defaultInputState);
+  const [occasion, setOccasion] = useState("");
+  const [seatOption, setSeatOption] = useState("");
+  const [firstName, setFirstName] = useState(defaultInputState);
+  const [lastName, setLastName] = useState(defaultInputState);
+  const [email, setEmail] = useState(defaultInputState);
+  const [specialRequest, setSpecialRequest] = useState("");
+  const [isSuccessful, setIsSuccessful] = useState(false);
+  const [isFailed, setIsFailed] = useState(false);
 
   const isEmail = emailAddress => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(emailAddress);
   const formIsValid = () => date && time && numDiners && firstName && lastName && isEmail(email.value);
