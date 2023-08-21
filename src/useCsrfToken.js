@@ -9,15 +9,13 @@ export const useCsrfToken = () => {
       method: 'GET',
       credentials: 'same-origin',
     })
-    .then(res => {
-      res.json();
-    })
+    .then(res => res.json())
     .then(data => {
-      setCsrfToken(data['csrf_token']);
+      setCsrfToken(data.csrf_token);
     })
     .catch(err => {
       console.log(err);
     });
-  });
+  }, []);
   return csrfToken;
 }

@@ -12,14 +12,14 @@ const Navbar = props => {
       <div className='super-container flex-container navbar-container'>
         <Link to='/'><img src='./images/banner-yellow.png' alt='Little Lemon Logo' className='navbar-logo'/></Link>
         <a href='#' className='navbar-toggle' onClick={toggleNavbar}>
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
         </a>
         <ul className={`flex-container navbar-list ${isActive ? 'active' : 'inactive'}`}>
           <li><Link to='/' className='navbar-link'>HOME</Link></li>
           <li><Link to='#' className='navbar-link'>MENU</Link></li>
           <li><Link to='/booking' className='navbar-link'>RESERVATION</Link></li>
           <li><Link to='#' className='navbar-link'>OUR STORY</Link></li>
-          <li><Link to='#' className='navbar-link'><i class="fa-solid fa-cart-shopping" /></Link></li>
+          <li><Link to='#' className='navbar-link'><i className="fa-solid fa-cart-shopping" /></Link></li>
         </ul>
       </div>
     </nav>

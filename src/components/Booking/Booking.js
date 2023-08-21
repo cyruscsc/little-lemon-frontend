@@ -6,7 +6,7 @@ const Booking = props => {
   return (
     <>
       <BookingHero />
-      <MyBooking />
+      {/* <MyBooking /> */}
       <BookingForm />
     </>
   );

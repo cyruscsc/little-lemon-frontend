@@ -16,11 +16,11 @@ const Reviews = props => {
             </div>
             <div className="text-yellow">
               <span>
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
               </span>
             </div>
             <div className="paragraph-text">
@@ -36,11 +36,11 @@ const Reviews = props => {
             </div>
             <div className="text-yellow">
               <span>
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
               </span>
             </div>
             <div className="paragraph-text">
@@ -56,11 +56,11 @@ const Reviews = props => {
             </div>
             <div className="text-yellow">
               <span>
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
               </span>
             </div>
             <div className="paragraph-text">
@@ -76,11 +76,11 @@ const Reviews = props => {
             </div>
             <div className="text-yellow">
               <span>
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
-                <i class="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
+                <i className="fa-solid fa-star" />
               </span>
             </div>
             <div className="paragraph-text">
