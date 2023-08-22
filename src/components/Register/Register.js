@@ -4,7 +4,7 @@ import { useCsrfToken } from '../../useCsrfToken';
 import './Register.css';
 
 const Register = props => {
-  // const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   const csrfToken = useCsrfToken();
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -104,27 +104,27 @@ const Register = props => {
       <div className='super-container'>
         <form onSubmit={handleSubmit} className='form-container'>
           <div className='input-container'>
-            <label htmlFor='username'>Username</label>
             <input type='text' name='username' value={username}
               onChange={e => {setUsername(e.target.value)}}
               onBlur={() => {checkUsername()}}
               required id='username' className='input-box bg-green text-white medium-16'
             />
+            <label htmlFor='username'>Username</label>
           </div>
           <div className='input-container'>
-            <label htmlFor='email'>Email</label>
             <input type='email' name='email' value={email}
               onChange={e => {setEmail(e.target.value)}}
               onBlur={() => {checkEmail()}}
               required id='email' className='input-box bg-green text-white medium-16'
             />
+            <label htmlFor='email'>Email</label>
           </div>
           <div className='input-container'>
-            <label htmlFor='password'>Password</label>
             <input type='password' name='password' value={password}
               onChange={e => {setPassword(e.target.value)}}
               required id='password' className='input-box bg-green text-white medium-16'
             />
+            <label htmlFor='password'>Password</label>
           </div>
           <div className='input-container'>
             <button type='submit' className='button bold-18 booking-button bg-yellow text-green button-text' disabled={!validForm()}>Register</button>

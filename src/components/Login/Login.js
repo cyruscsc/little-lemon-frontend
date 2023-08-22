@@ -14,7 +14,6 @@ const Login = props => {
     e.preventDefault();
     fetch(`${props.backendDomain}/api/login`, {
       method: 'POST',
-      method: 'POST',
       credentials: 'same-origin',
       headers: {
         'Content-Type': "application/json",
@@ -45,18 +44,18 @@ const Login = props => {
       <div className='super-container'>
         <form onSubmit={handleSubmit} className='form-container'>
           <div className='input-container'>
-            <label htmlFor='username'>Username</label>
             <input type='text' name='username' value={username}
               onChange={e => {setUsername(e.target.value)}}
               required id='username' className='input-box bg-green text-white medium-16'
             />
+            <label htmlFor='username'>Username</label>
           </div>
           <div className='input-container'>
-            <label htmlFor='password'>Password</label>
             <input type='password' name='password' value={password}
               onChange={e => {setPassword(e.target.value)}}
               required id='password' className='input-box bg-green text-white medium-16'
             />
+            <label htmlFor='password'>Password</label>
           </div>
           <div className='input-container'>
             <button type='submit' className='button bold-18 booking-button bg-yellow text-green button-text' disabled={!validForm()}>Login</button>
